@@ -17,7 +17,7 @@ nhoods <-
   select(MAPNAME)
 ```
 
-```{r echo = FALSE, fig.align='center'}
+```{r echo = FALSE, fig.align='center', include = FALSE}
 ggplot() +
   geom_sf(data = nhoods, aes(color = MAPNAME)) +
   theme(panel.background = element_blank(),
