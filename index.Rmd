@@ -1,6 +1,27 @@
 ---
 title: "Home"
-output: html_document
 ---
 
 **THIS IS MY HOMEPAGE**
+
+__Trying to make icons that link to other things__
+
+```{r}
+library(tidyverse)
+library(esri2sf)
+library(sf)
+
+nhoods <- 
+  esri2sf("https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Philly_Neighborhoods/FeatureServer/0") %>% 
+  st_transform(2272) %>% 
+  select(MAPNAME)
+
+image <- ggplot() +
+  geom_sf(data = nhoods, aes(color = MAPNAME)) +
+  theme(panel.background = element_blank(),
+        axis.text = element_blank(),
+        axis.line = element_blank(),
+        axis.ticks = element_blank())
+```
+
+![image](new-page.html)
