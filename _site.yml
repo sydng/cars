@@ -7,4 +7,6 @@ navbar:
     href: index.html
   - text: "Speed and Distance"
     href: speed-and-distance.html
-output: html_document
+output: 
+  html_document:
+    theme: lumen
