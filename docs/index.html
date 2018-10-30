@@ -205,24 +205,7 @@ $(document).ready(function () {
 
 <p><strong>THIS IS MY HOMEPAGE</strong></p>
 <p><strong>Trying to make icons that link to other things</strong></p>
-<pre class="r"><code>library(tidyverse)
-library(esri2sf)
-library(sf)
-
-nhoods &lt;- 
-  esri2sf(&quot;https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Philly_Neighborhoods/FeatureServer/0&quot;) %&gt;% 
-  st_transform(2272) %&gt;% 
-  select(MAPNAME)</code></pre>
-<pre><code>## [1] &quot;Feature Layer&quot;
-## [1] &quot;esriGeometryPolygon&quot;</code></pre>
-<pre class="r"><code>ggplot() +
-  geom_sf(data = nhoods, aes(color = MAPNAME)) +
-  theme(panel.background = element_blank(),
-        axis.text = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks = element_blank())</code></pre>
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<p><a href="new-page.html"><img src="C:/Users/sydng/Documents/cars/google-earth-view-5992" /></a></p>
+<p><a href="new-page.html"><img src="%22C:/Users/sydng/Documents/cars/google-earth-view-5992%22" width="250" /></a></p>
 
 
 

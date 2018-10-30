@@ -6,7 +6,7 @@ title: "Home"
 
 __Trying to make icons that link to other things__
 
-```{r}
+```{r message = FALSE, warning = FALSE, include = FALSE}
 library(tidyverse)
 library(esri2sf)
 library(sf)
@@ -21,7 +21,8 @@ ggplot() +
   theme(panel.background = element_blank(),
         axis.text = element_blank(),
         axis.line = element_blank(),
-        axis.ticks = element_blank())
+        axis.ticks = element_blank(),
+        legend.position = "none")
 ```
 
-[![](C:/Users/sydng/Documents/cars/google-earth-view-5992)](new-page.html)
+[![]("C:/Users/sydng/Documents/cars/google-earth-view-5992"){width=250px}](new-page.html)
