@@ -6,7 +6,7 @@ title: "Home"
 
 __Trying to make icons that link to other things__
 
-```{r message = FALSE, warning = FALSE, include = FALSE}
+```{r message = FALSE, warning = FALSE, include = FALSE, cache=TRUE}
 library(tidyverse)
 library(esri2sf)
 library(sf)
@@ -15,7 +15,9 @@ nhoods <-
   esri2sf("https://services.arcgis.com/fLeGjb7u4uXqeF9q/ArcGIS/rest/services/Philly_Neighborhoods/FeatureServer/0") %>% 
   st_transform(2272) %>% 
   select(MAPNAME)
+```
 
+```{r echo = FALSE, fig.align='center'}
 ggplot() +
   geom_sf(data = nhoods, aes(color = MAPNAME)) +
   theme(panel.background = element_blank(),
@@ -25,4 +27,5 @@ ggplot() +
         legend.position = "none")
 ```
 
-[![]("C:/Users/sydng/Documents/cars/google-earth-view-5992"){width=250px}](new-page.html)
+
+[![](C:/Users/sydng/Documents/cars/google-earth-view-5992.jpeg){width=250px}](new-page.html)
