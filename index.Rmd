@@ -16,7 +16,7 @@ nhoods <-
   st_transform(2272) %>% 
   select(MAPNAME)
 
-image <- ggplot() +
+ggplot() +
   geom_sf(data = nhoods, aes(color = MAPNAME)) +
   theme(panel.background = element_blank(),
         axis.text = element_blank(),
@@ -24,4 +24,4 @@ image <- ggplot() +
         axis.ticks = element_blank())
 ```
 
-![image](new-page.html)
+[![](C:/Users/sydng/Documents/cars/google-earth-view-5992)](new-page.html)
