@@ -28,4 +28,4 @@ ggplot() +
 ```
 
 
-[![]("C:/Users/sydng/Documents/cars/google-earth-view-5992.jpeg"){width=250px}](new-page.html)
+[![]("google-earth-view-5992.jpeg")](new-page.html)
